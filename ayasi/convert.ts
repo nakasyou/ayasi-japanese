@@ -3,12 +3,17 @@ export default (text: string): string => {
     "語": "语",
     "きさま|あなた|貴方|きみ": "贵樣",
     "すごい|えぐい|やばい|めっちゃ|大きな": "極度",
+    "GitHub": "github",
+    
     
     // ひらがな
     "し": "レ",
     "る": "ゑ",
     "ら": "う",
     "か": "カ",
+    // かたかな
+    "テ": "亍",
+    "ラ": "ウ",
   }
   for(const [pure, ayasi] of Object.entries(data)){
     text = text.replaceAll(new RegExp(pure,"g"), (raw) => {
