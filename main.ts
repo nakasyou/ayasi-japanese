@@ -7,6 +7,7 @@ const app = new Hono()
 
 app.get('/', c => c.json({
   title: "怪レい日本语",
+  soucecode: "https://github.com/nakasyou/ayasi-japanese",
 }))
 app.get('/api', ayasi)
 
