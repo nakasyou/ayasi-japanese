@@ -1,7 +1,8 @@
 export default (text: string): string => {
   const data: Record<string,string> = {
     "語": "语",
-    "し": "レ"
+    "し": "レ",
+    "きさま|あなた|貴方|きみ": "贵樣",
   }
   for(const [pure, ayasi] of Object.entries(data)){
     text = text.replaceAll(new RegExp(pure,"g"), (raw) => {
