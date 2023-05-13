@@ -8,7 +8,7 @@ export default (text: string): string => {
     "し": "レ",
     "る": "ゑ",
     "ら": "う",
-    "か", "カ",
+    "か": "カ",
   }
   for(const [pure, ayasi] of Object.entries(data)){
     text = text.replaceAll(new RegExp(pure,"g"), (raw) => {
