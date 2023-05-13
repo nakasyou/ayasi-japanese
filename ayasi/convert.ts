@@ -4,7 +4,7 @@ export default (text: string): string => {
     "し": "レ"
   }
   for(const [pure, ayasi] of Object.entries(data)){
-    text = text.replaceAll(new RegExp(pure), (raw) => {
+    text = text.replaceAll(new RegExp(pure,"g"), (raw) => {
       return (Math.random()>0.5) ? ayasi : raw
     })
   }
