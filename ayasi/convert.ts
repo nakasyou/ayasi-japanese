@@ -3,7 +3,7 @@ export default (text: string): string => {
     "語": "语",
     "し": "レ",
     "きさま|あなた|貴方|きみ": "贵樣",
-    "すごい|えぐい|やばい|めっちゃ|大きな|": "極度",
+    "すごい|えぐい|やばい|めっちゃ|大きな": "極度",
     "る": "ゑ",
   }
   for(const [pure, ayasi] of Object.entries(data)){
