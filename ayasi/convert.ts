@@ -8,7 +8,7 @@ export default (text: string): string => {
   }
   for(const [pure, ayasi] of Object.entries(data)){
     text = text.replaceAll(new RegExp(pure,"g"), (raw) => {
-      return (Math.random()>0.5) ? ayasi : raw
+      return (Math.random()>0.3) ? ayasi : raw
     })
   }
   return text
